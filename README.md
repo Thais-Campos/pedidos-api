@@ -23,7 +23,6 @@ A API permite:
 
 ## Estrutura do pedido recebido
 
-```json
 {
   "numeroPedido": "v10089015vdb-01",
   "valorTotal": 10000,
@@ -37,7 +36,7 @@ A API permite:
   ]
 }
 
-Transformação dos dados (mapping)
+## Transformação dos dados (mapping)
 
 Antes de salvar no banco, os dados são transformados para o seguinte formato:
 
@@ -53,22 +52,29 @@ Antes de salvar no banco, os dados são transformados para o seguinte formato:
     }
   ]
 }
-Endpoints
+
+## Endpoints
+
 Criar pedido
 POST /order
+
 Buscar pedido por ID
 GET /order/:orderId
+
 Listar pedidos
 GET /order/list
+
 Atualizar pedido
 PUT /order/:orderId
+
 Deletar pedido
 DELETE /order/:orderId
-Testes da API
+
+## Testes da API
 
 Na pasta postman está disponível a collection do Postman para facilitar os testes da API.
 
-Como executar o projeto
+## Como executar o projeto
 
 Instale as dependências:
 
@@ -86,11 +92,11 @@ http://localhost:3000
 
 Depois disso rode:
 
-```bash
 git add .
 git commit -m "docs: adiciona README do projeto"
 git push
-Resultado
+
+## Resultado
 
 Seu repositório terá:
 
